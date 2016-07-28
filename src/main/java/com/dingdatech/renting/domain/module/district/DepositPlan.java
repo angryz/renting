@@ -1,4 +1,6 @@
-package com.dingdatech.renting.domain.module;
+package com.dingdatech.renting.domain.module.district;
+
+import com.dingdatech.renting.domain.module.ValueObject;
 
 /**
  * 保证金方案。<br>

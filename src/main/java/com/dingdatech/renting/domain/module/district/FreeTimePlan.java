@@ -1,4 +1,4 @@
-package com.dingdatech.renting.domain.module;
+package com.dingdatech.renting.domain.module.district;
 
 /**
  * 免费时长方案。<br>

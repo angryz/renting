@@ -1,4 +1,6 @@
-package com.dingdatech.renting.domain.module;
+package com.dingdatech.renting.domain.module.district;
+
+import com.dingdatech.renting.domain.module.Entity;
 
 /**
  * 区域实体。<br>
