@@ -1,0 +1,28 @@
+group 'com.dingdatech'
+version '1.0-SNAPSHOT'
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '2.14'
+  distributionUrl = "https://services.gradle.org/distributions/gradle-$gradleVersion-bin.zip"
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    [compileJava, compileTestJava, javadoc]*.options*.encoding = 'UTF-8'
+}
+
+repositories {
+    mavenLocal()
+    maven { url "http://114.55.36.61:8087/nexus/content/groups/public/" }
+    maven { url "http://maven.oschina.net/content/groups/public/" }
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
